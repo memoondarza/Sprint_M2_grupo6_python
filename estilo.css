@@ -1,0 +1,33 @@
+#right-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+}
+
+#right-column:hover {
+    background-color: silver;
+    transform: translate3d(0, -5px, 0);
+
+}
+
+/*#exampleModal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    background-size: cover;
+    background-position: center;
+}
+
+#exampleModal:hover {
+    background-color: gainsboro;
+    transform: translate3d(0, -5px, 0);
+
+}*/
