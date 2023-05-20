@@ -14,6 +14,14 @@
     transform: translate3d(0, -5px, 0);
 
 }
+#titHistorial{
+    color: chocolate;
+}
+#titHistorial:hover{
+    color: blue;
+    font-size: 35px;
+    transform: translate3d(0, -5px, 0);
+}
 
 /*#exampleModal {
     position: relative;
