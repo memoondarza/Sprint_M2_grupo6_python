@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"
+    />
+    <link rel="stylesheet" href="css\tablas.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
+   
+    <title>Sprint Final Módulo 2, Aplicación Tablas </title>
+  </head>
+
+<body>
+  <header class="container">
+    <div class="container-fluid">
+      <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #45A29E;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/stethoscope-icon-2316460_640.webp" alt width="100px" height="100px">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/agendamiento.html">Agendamiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Configuración</a>
+              </li>
+              <li>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" onclick="window.location.href='privada.html'">
+                  Perfil
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Cerrar Sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+    <header class="container"></header>
+
+    <main>
+        <div class="container">
+          <h2 >Estadísticas Exámenes Coagulación</h2>
+          <br>
+          
+           <h5>¿Qué son las pruebas de los factores de la coagulación?</h5> 
+           <p>Los factores de la coagulación son proteínas de la sangre. Estos ayudan formar coágulos de sangre para detener el sangrado cuando usted tiene una herida. Estas proteínas también se conocen como factores de coagulación. Usted tiene diferentes factores de coagulación que son importantes para producir coágulos.
+          </p>
+        </div>
+
+  
+<!-- ESTE PÁRRAFO ES EL QUE LLAMA A LA TABLA DE DATOS A TRAVÉS del archivo js-tabla.js-->
+
+        <section class="container">
+            <div class="row" >
+                <div class="col-12 p-3">
+                    <div class="table-responsive p-3 " style="background-color: #5587dc ; color: #ced0d3; " >
+                    
+                    <table id="example_coagulacion" class="display table-light" width="100%" style="background-color: #66FCF1 ; color: #212e3d;"></table>                  
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a  type="button" href="aplica_tablas.html" class="btn btn-primary btn-lg">Volver</a>
+      </div>
+
+    </main>
+ <!-- fin tabla-->
+    <br />
+
+      <footer class="text-center text-white" style="background-color: #45a29e">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Instituciones de Salud</h2>
+              <ul class="xoxo blogroll">
+                <li><a class="text-white"  href="https://www.fonasa.cl/site/edic/base/port/asegurados.html" rel="noopener" title="FONASA" target="_blank">FONASA</a></li>
+                <li><a class="text-white"  href="http://web.minsal.cl/" rel="noopener" title="Ministerio de Salud" target="_blank">Ministerio de Salud</a></li>
+                <li><a class="text-white"  href="http://seremi5.redsalud.gov.cl/url/page/seremis/seremi5/g_home/home.html/" rel="noopener" title="Seremi de Salud Región de Valparaíso" target="_blank">Seremi de Salud Región de Valparaíso</a></li>
+                <li><a class="text-white"  href="http://www.supersalud.gob.cl/portal/w3-channel.html" rel="noopener" title="Superintendencia de Salud" target="_blank">Superintendencia de Salud</a></li>
+                <li><a class="text-white"  href="https://www.supersalud.gob.cl/portal/w3-article-2528.html" rel="noopener" title="Isapres" target="_blank">Isapres</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h2>Hospitales</h2>
+              <ul class="xoxo blogroll">
+                <li><a class="text-white"  href="https://www.hsmq.cl/" rel="noopener" title="Hospital de Quillota" target="_blank">Hospital de Quillota</a></li>
+                <li><a class="text-white"  href="http://www.hospitalquilpue.cl/" rel="noopener" title="Hospital de Quilpué" target="_blank">Hospital de Quilpué</a></li>
+                <li><a class="text-white"  href="http://www.hospitalfricke.cl/" rel="noopener" title="Hospital Dr. Gustavo fricke" target="_blank">Hospital Dr. Gustavo fricke</a></li>
+                <li><a class="text-white"  href="http://www.xn--hospitalpeablanca-oxb.cl/" rel="noopener" title="Hospital Juana Ross de Edwards de Peñablanca" target="_blank">Hospital Juana Ross de Edwards – Peñablanca</a></li>
+                <li><a class="text-white"  href="http://www.hospitalsanagustin.cl/" rel="noopener" title="Hospital Provincial San Agustín La Ligua" target="_blank">Hospital Provincial San Agustín La Ligua</a></li>
+              </ul>
+            </div>
+          </div>        
+        </div>
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2023 Copyright:
+          <a class="text-white" href="https://www.Google.cl/">NUEVO SISTEMA DE SALUD INTEGRAL</a>
+        </div>
+      </footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="js\cuadro1.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

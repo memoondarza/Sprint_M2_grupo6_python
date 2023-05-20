@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css\estilos.css">
+    <title>Tarea AE51 grupal, módulo 2, Productos</title>
+
+  </head>
+  <body>
+    <header class="container">
+      <div class="container-fluid">
+        <nav class="navbar navbar-dark navbar-expand-lg "
+          style="background-color: #45A29E ;">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-8">  
+                <a class="navbar-brand" href="/index.html">
+                  <img src="img/logo.webp" alt width="100px" height="100px">
+                  NUEVO SISTEMA DE SALUD INTEGRAL</a>
+                <button class="navbar-toggler" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html" target="_blank"><strong>Nosotros</strong></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="aplica_tablas.html"
+                          target="_blank"><strong>Estadisticas</strong></a></li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html"
+                          target="_blank"><strong>Ubicación</strong></a></li>                
+                  </ul>  
+                </div>   
+              </div>   
+            </div>
+            
+          </div>
+          <div class="col align-self-end">
+            <a class="navbar-brand" href="/login.html">
+            <img src="img/login.png" alt width="100px" height="100px"></a>
+          </div> 
+        </nav>
+      </div>
+      <br>
+    </header>
+    <br>
+    <main>
+      <section class="container text-center">
+        <div class="row" id="filas1">
+          <div class="col-6">
+            <img src="img/hospitalEdificio.jpg" width="300px" alt="...">
+          </div>
+          <div class="col-6">
+            <h3>NUEVA SALUD INTEGRAL</h3>
+            <h5>Somos una organización compuesta mayormente por un grupo
+              médico enfocado a desarrollar y
+              otorgar un centro medico que cumpla con la mejor calidad de
+              atención e infraestructura dentro de la zona,
+              ofreciendo prestaciones en el área de exámenes y consulta
+              medica, en variadas especialidades.
+              Actualmente este se encuentra en la parte final de su
+              implementación, para lo cual la creación de nuevos
+              convenios con la comunidad permite facilitar desarrollo,
+              crecimiento e innovación de esta institución.</h5>
+          </div>
+        </div>
+
+        <div class="row" id="filas2">
+          <div class="col-6 ">
+            <h3>Nuestra Visión</h3>
+            <h5>Nuestra Misión
+              Entregar día a día una mejor calidad en la atención y
+              diagnóstico, dentro de una infraestructura que entregue una
+              experiencia cómoda y eficiente.
+              Entregar al usuario una educación integral de su salud e
+              impactar positivamente en toda la comunidad.</h5>
+          </div>
+          <div class="col-6">
+            <img src="img/equipoMedico.jpg" width="200px" alt="...">
+          </div>
+        </div>
+        <div class="row" id="filas3">
+          <div class="col-6">
+            <img src="img/proposito.jpg" width="300px" alt="...">
+          </div>
+          <div class="col-6">
+            <h3>Propósito</h3>
+            <h5>Ser reconocidos y valorados como uno de los centros
+              médicos con mayor cobertura,
+              satisfacción e innovación en el servicio.</h5>
+          </div>
+          <br>
+
+        </section>
+
+      </main>
+
+      <footer class=" text-center text-white"
+        style="background-color: #45A29E ;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Instituciones de Salud</h2>
+              <ul class="xoxo blogroll">
+                <li><a class="text-white"  href="https://www.fonasa.cl/site/edic/base/port/asegurados.html" rel="noopener" title="FONASA" target="_blank">FONASA</a></li>
+                <li><a class="text-white"  href="http://web.minsal.cl/" rel="noopener" title="Ministerio de Salud" target="_blank">Ministerio de Salud</a></li>
+                <li><a class="text-white"  href="http://seremi5.redsalud.gov.cl/url/page/seremis/seremi5/g_home/home.html/" rel="noopener" title="Seremi de Salud Región de Valparaíso" target="_blank">Seremi de Salud Región de Valparaíso</a></li>
+                <li><a class="text-white"  href="http://www.supersalud.gob.cl/portal/w3-channel.html" rel="noopener" title="Superintendencia de Salud" target="_blank">Superintendencia de Salud</a></li>
+                <li><a class="text-white"  href="https://www.supersalud.gob.cl/portal/w3-article-2528.html" rel="noopener" title="Isapres" target="_blank">Isapres</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h2>Hospitales</h2>
+              <ul class="xoxo blogroll">
+                <li><a class="text-white"  href="https://www.hsmq.cl/" rel="noopener" title="Hospital de Quillota" target="_blank">Hospital de Quillota</a></li>
+                <li><a class="text-white"  href="http://www.hospitalquilpue.cl/" rel="noopener" title="Hospital de Quilpué" target="_blank">Hospital de Quilpué</a></li>
+                <li><a class="text-white"  href="http://www.hospitalfricke.cl/" rel="noopener" title="Hospital Dr. Gustavo fricke" target="_blank">Hospital Dr. Gustavo fricke</a></li>
+                <li><a class="text-white"  href="http://www.xn--hospitalpeablanca-oxb.cl/" rel="noopener" title="Hospital Juana Ross de Edwards de Peñablanca" target="_blank">Hospital Juana Ross de Edwards – Peñablanca</a></li>
+                <li><a class="text-white"  href="http://www.hospitalsanagustin.cl/" rel="noopener" title="Hospital Provincial San Agustín La Ligua" target="_blank">Hospital Provincial San Agustín La Ligua</a></li>
+              </ul>
+            </div>
+          </div>        
+        </div>
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!"
+              role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!"
+              role="button"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!"
+              role="button"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!"
+              role="button"><i class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!"
+              role="button"><i class="fab fa-linkedin-in"></i></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!"
+              role="button"><i class="fab fa-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <div class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://www.Google.cl/">NUEVO SISTEMA DE SALUD INTEGRAL</a>
+        </div>
+
+      </footer>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+      <script stype="text/javascript" src="js/javascript1.js"></script>
+
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+  </html>

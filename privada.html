@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css\estilo.css">
+        <script src="js\paciente.js"></script>
+        <script src="js/modal.js"></script>
+        <title>Sprint modulo2</title>
+    </head>
+
+    <body>
+        <header class="container">
+            <div class="container-fluid">
+              <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #45A29E;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="/img/stethoscope-icon-2316460_640.webp" alt width="100px" height="100px">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="/agendamiento.html">Agendamiento</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Recursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Configuración</a>
+                      </li>
+                      <li>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                          Perfil
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Cerrar Sesión</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <i class="bi bi-person-vcard-fill"></i>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Datos
+                            paciente</h1>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <li><img
+                                src="/img/customer_person_people_woman_you_1627.png"
+                                alt="Foto">
+                        </li>
+                        <li><label for="nombre">Nombre: Isabel Cordova</label></li>
+                        <li> <label for="edad">Edad: 56</label></li>
+                        <li><label for="fechanac">Fecha de naciemiento :
+                                15/03/1967</label></li>
+                        <li><label for="telefono">Telefono:+56912345678</label></li>
+                        <li><label for="direccion">Direccion: pje las tortolas
+                                45,Villa Alemana</label></li>
+                        <li><label for="nacionalidad">Nacionalidad: Chilena</label></li>
+                        <li><label for="contemergencia">Contacto Emergencia:Hija
+                                Maria Nro +56987654321 </label></li>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save
+                            changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-3 columna-izquierda">
+                    <!-- Columna de 30% - Información breve -->
+                    <div class="py-2 px-5 ">
+                        <!-- barra lateral-->
+                        <div class="container-fluid">
+                            <div class="row">
+                              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                                <div class="sidebar-sticky">
+                                  <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <button type="button"
+                                                class="btn btn-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#tratamiento">
+                                                Tratamiento
+                                            </button> 
+                                             <!-- Modal -->
+        <div class="modal fade" id="tratamiento" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">El control de la diabetes tipo 2 incluye lo siguiente:</h1>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            Alimentación saludable.</li>
+                        <li>Ejercicio regular.</li>
+                        <li>Pérdida de peso.</li>
+                        <li>Control de la glucosa en la sangre.</li>
+                        <li>Insulina</li>
+                      </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"
+                        data-bs-dismiss="modal">Close</button>
+                
+                </div>
+            </div>
+        </div>
+    </div> 
+                                    </li>
+                                    <br><br>
+                                    <li class="nav-item">
+                                        <button type="button"
+                                        class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#que">
+                                        ¿Qué es la diabetes tipo 2?
+                                    </button> 
+                                     <!-- Modal -->
+<div class="modal fade" id="que" tabindex="-1"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            
+            <h1 class="modal-title fs-5" id="exampleModalLabel">La diabetes tipo 2 :</h1>
+            <button type="button" class="btn-close"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>
+                    Es una enfermedad en la que los niveles de glucosa o azúcar en la sangre son demasiado altos.
+                    La glucosa es su principal fuente de energía. Proviene de los alimentos que consume.
+                    Una hormona llamada insulina ayuda a que la glucosa ingrese a las células para brindarles energía. 
+                    Si tiene diabetes, su cuerpo no produce suficiente insulina o no la usa bien. Luego, la glucosa
+                    permanece en la sangre y no ingresa lo suficiente a las células.
+
+                    Con el tiempo, tener demasiada glucosa en la sangre puede causar problemas de salud.
+                     Sin embargo, se pueden tomar medidas para controlar la diabetes y tratar de prevenir 
+                     estos problemas de salud.
+                </li>
+                
+                
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary"
+                data-bs-dismiss="modal">Close</button>
+        
+        </div>
+    </div>
+</div>
+</div>   
+                                    </li>
+                                    <br><br>
+                                    <li class="nav-item">
+                                        <button type="button"
+                                        class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#causa">
+                                        ¿Qué causa la diabetes tipo 2?
+                                    </button> 
+                                     <!-- Modal -->
+<div class="modal fade" id="causa" tabindex="-1"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            
+            <h1 class="modal-title fs-5" id="exampleModalLabel">La diabetes tipo 2 puede deberse a una combinación de factores:</h1>
+            <button type="button" class="btn-close"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>
+                    Tener sobrepeso u obesidad</li>
+                <li>No hacer actividad física</li>
+                <li>Genética e historia familiar</li>
+                <li>En general, la diabetes tipo 2 comienza con resistencia a la insulina. 
+                    Esta es una afección en la que sus células no responden normalmente a la insulina.
+                    Como resultado, su cuerpo necesita más insulina para ayudar a que la glucosa ingrese a las células. 
+                    Al principio, su cuerpo produce más insulina para tratar de que las células respondan.
+                    Pero con el tiempo, su cuerpo no puede producir suficiente insulina y 
+                    sus niveles de glucosa en la sangre aumentan.</li>
+                
+              </ul>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary"
+                data-bs-dismiss="modal">Close</button>
+        
+        </div>
+    </div>
+</div>
+</div>  
+                                    </li>
+                                    <br><br>
+                                    <li class="nav-item">
+                                        <button type="button"
+                                        class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#sintomas">
+                                        ¿Cuáles son los síntomas de la diabetes tipo 2?
+                                    </button> 
+                                     <!-- Modal -->
+<div class="modal fade" id="sintomas" tabindex="-1"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Muchas personas con diabetes tipo 2 no presentan ningún síntoma. 
+                Si los tiene, los síntomas se desarrollan lentamente durante varios años. Pueden ser tan leves que no los note. 
+                Los síntomas pueden incluir:</h1>
+            <button type="button" class="btn-close"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>
+                    Aumento de la sed y la micción.</li>
+                <li>Aumento del hambre.</li>
+                <li>Sensación de cansancio.</li>
+                <li>Visión borrosa.</li>
+                <li>Entumecimiento u hormigueo en los pies o las manos.</li>
+                <li>Llagas que no cicatrizan.</li>
+                <li>Pérdida de peso sin causa aparente.</li>
+              </ul>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary"
+                data-bs-dismiss="modal">Close</button>
+        
+        </div>
+    </div>
+</div>
+</div> 
+                                    </li>
+                                  </ul>
+                                </div>
+                              </nav>
+                            </div>  
+                        </div>      
+                      
+                    </div>
+
+                </div>    
+                <div class="col-md-8 col-lg-9 columna-derecha" id="right-column">
+                        <!-- Columna de 70% - Información extensa -->
+                    <div class="py-2 px-5">
+
+                        <!-- informacion del resumen ejecutivo ingresado a traves de una card -->
+                        <div class="container">
+                            <h1>Historial del Paciente</h1>
+                              
+                            <div id="resumen-container" class="mt-4"></div>
+                        </div>
+
+                    </div>
+                </div>
+                    
+                
+
+            </div> 
+        </div>           
+
+                <br><br><br><br>
+                <div class="container">
+                    <footer class=" text-center text-white"
+                        style="background-color: #45A29E ;">
+                        <!-- Grid container -->
+                        <div class="container p-4 pb-0">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <h2>Instituciones de Salud</h2>
+                                <ul class="xoxo blogroll">
+                                  <li><a class="text-white"  href="https://www.fonasa.cl/site/edic/base/port/asegurados.html" rel="noopener" title="FONASA" target="_blank">FONASA</a></li>
+                                  <li><a class="text-white"  href="http://web.minsal.cl/" rel="noopener" title="Ministerio de Salud" target="_blank">Ministerio de Salud</a></li>
+                                  <li><a class="text-white"  href="http://seremi5.redsalud.gov.cl/url/page/seremis/seremi5/g_home/home.html/" rel="noopener" title="Seremi de Salud Región de Valparaíso" target="_blank">Seremi de Salud Región de Valparaíso</a></li>
+                                  <li><a class="text-white"  href="http://www.supersalud.gob.cl/portal/w3-channel.html" rel="noopener" title="Superintendencia de Salud" target="_blank">Superintendencia de Salud</a></li>
+                                  <li><a class="text-white"  href="https://www.supersalud.gob.cl/portal/w3-article-2528.html" rel="noopener" title="Isapres" target="_blank">Isapres</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <h2>Hospitales</h2>
+                                <ul class="xoxo blogroll">
+                                  <li><a class="text-white"  href="https://www.hsmq.cl/" rel="noopener" title="Hospital de Quillota" target="_blank">Hospital de Quillota</a></li>
+                                  <li><a class="text-white"  href="http://www.hospitalquilpue.cl/" rel="noopener" title="Hospital de Quilpué" target="_blank">Hospital de Quilpué</a></li>
+                                  <li><a class="text-white"  href="http://www.hospitalfricke.cl/" rel="noopener" title="Hospital Dr. Gustavo fricke" target="_blank">Hospital Dr. Gustavo fricke</a></li>
+                                  <li><a class="text-white"  href="http://www.xn--hospitalpeablanca-oxb.cl/" rel="noopener" title="Hospital Juana Ross de Edwards de Peñablanca" target="_blank">Hospital Juana Ross de Edwards – Peñablanca</a></li>
+                                  <li><a class="text-white"  href="http://www.hospitalsanagustin.cl/" rel="noopener" title="Hospital Provincial San Agustín La Ligua" target="_blank">Hospital Provincial San Agustín La Ligua</a></li>
+                                </ul>
+                              </div>
+                            </div>        
+                          </div>
+                        <div class="container p-4 pb-0">
+                            <!-- Section: Social media -->
+                            <section class="mb-4">
+                                <!-- Facebook -->
+                                <a
+                                    class="btn btn-outline-light btn-floating m-1"
+                                    href="#!" role="button"><i
+                                        class="fab fa-facebook-f"></i></a>
+
+                                <!-- Twitter -->
+                                <a
+                                    class="btn btn-outline-light btn-floating m-1"
+                                    href="#!" role="button"><i
+                                        class="fab fa-twitter"></i></a>
+
+                                <!-- Google -->
+                                <a
+                                    class="btn btn-outline-light btn-floating m-1"
+                                    href="#!" role="button"><i
+                                        class="fab fa-google"></i></a>
+
+                                <!-- Instagram -->
+                                <a
+                                    class="btn btn-outline-light btn-floating m-1"
+                                    href="#!" role="button"><i
+                                        class="fab fa-instagram"></i></a>
+
+                                <!-- Linkedin -->
+                                <a
+                                    class="btn btn-outline-light btn-floating m-1"
+                                    href="#!" role="button"><i
+                                        class="fab fa-linkedin-in"></i></a>
+
+                                <!-- Github -->
+                                <a
+                                    class="btn btn-outline-light btn-floating m-1"
+                                    href="#!" role="button"><i
+                                        class="fab fa-github"></i></a>
+                            </section>
+                            <!-- Section: Social media -->
+                        </div>
+                        <!-- Grid container -->
+
+                        <div class="text-center p-3"
+                            style="background-color: rgba(0, 0, 0, 0.2);">
+                            © 2023 Copyright:
+                            <a class="text-white" href="https://www.Google.cl/">NUEVO SISTEMA DE SALUD INTEGRAL</a>
+                        </div>
+
+                    </footer>
+                </div>
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                    crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                    crossorigin="anonymous"></script>
+                <script
+                    src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+                <script stype="text/javascript" src="js\script.js"></script>
+
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            </body>
+
+        </html>
